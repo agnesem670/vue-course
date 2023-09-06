@@ -3,15 +3,15 @@ const app = Vue.createApp({
     /* template: '<h2>I am the template</h2>' */
     data() {
         return {
+            showBooks: true,
             title: 'Title from data return',
             author: 'Name',
             age: 45
         }
     },
     methods: {
-        changeTitle(abc) {
-            //this.title = 'title changed by click'
-            this.title = abc
+        toggleShowBooks() {
+            this.showBooks = !this.showBooks
         }
     }
 })
