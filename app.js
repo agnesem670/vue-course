@@ -3,11 +3,12 @@ const app = Vue.createApp({
     /* template: '<h2>I am the template</h2>' */
     data() {
         return {
+            url: 'http://hoborg.pl/react',
             showBooks: true,
             books: [
-                {title: "name of the wind", author: "patric r."},
-                {title: "the way of kings", author: "brandon s."},
-                {title: "the final empire", author: "brandon s."},
+                {title: "name of the wind", author: "patric r.", img:""},
+                {title: "the way of kings", author: "brandon s.", img:""},
+                {title: "the final empire", author: "brandon s.", img:""},
             ]
         }
     },

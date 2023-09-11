@@ -22,8 +22,11 @@
     <div id="app">
         <!-- <h2>The new template directly from index.html</h2> -->
         <div v-if="showBooks">
+            <!-- <a v-bind:href="url"> the best website </a> -->
+            <!-- <a :href="url"> the best website </a> -->
             <ul>
                 <li v-for="book in books">
+                    <img :src="book.img" :alt="book.title">
                     <h3> {{ book.title }}</h3>
                     <p> {{ book.author }}</p>
                 </li>
